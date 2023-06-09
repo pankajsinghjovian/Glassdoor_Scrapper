@@ -1,0 +1,9 @@
+pandas
+numpy
+bs4
+beautifulSoup4
+selenium
+openai
+webdriver-manager
+os
+openpyxl
