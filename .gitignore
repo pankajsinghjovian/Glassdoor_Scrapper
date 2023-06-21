@@ -1,0 +1,12 @@
+/venv
+/__pycache__
+/tempfiles
+.env
+*.CSV
+*.xlsx
+set.py
+op.py
+temp.py
+test.py
+tesss.py
+app.py
