@@ -1,0 +1,11 @@
+pandas 
+beautifulSoup4
+selenium
+requests
+slack_sdk
+slack 
+schedule
+openpyxl
+python-dotenv
+
+
