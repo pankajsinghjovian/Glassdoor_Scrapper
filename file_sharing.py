@@ -13,8 +13,8 @@ channel =os.getenv("channel_id")
 
 # Set the path to the file you want to send
 file_path = r"Glassdoor_jobs.CSV"
-file_path1= r"Glassdoor_jobs.xlsx"
-file_list= [file_path1, file_path]
+# file_path1= r"Glassdoor_jobs.xlsx"
+# file_list= [file_path1, file_path]
 
 # #Setting up an Automated Text
 message ="Here is the Glassdoor scrapped Jobs"
@@ -38,7 +38,7 @@ def send_message():
 
 #Function to send the file
 def send_file():
-     for element in file_list:
+     for element in file_path:
          response =client.files_upload_v2(
             channel = channel,
             file= element,
