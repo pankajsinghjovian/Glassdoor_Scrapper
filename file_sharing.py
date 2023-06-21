@@ -12,7 +12,7 @@ channel =os.getenv("channel_id")
 # print(channel)
 
 # Set the path to the file you want to send
-file_path = r"Glassdoor_jobs.CSV"
+file_path = r"Glassdoor_jobs.csv"
 # file_path1= r"Glassdoor_jobs.xlsx"
 # file_list= [file_path1, file_path]
 
