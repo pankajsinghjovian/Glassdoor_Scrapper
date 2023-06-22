@@ -13,8 +13,8 @@ channel =os.getenv("channel_id")
 
 # Set the path to the file you want to send
 file_path = r"Glassdoor_jobs.csv"
-# file_path1= r"Glassdoor_jobs.xlsx"
-# file_list= [file_path1, file_path]
+file_path1= r"Glassdoor_jobs.xlsx"
+file_list= [file_path1, file_path]
 
 # #Setting up an Automated Text
 message ="Here is the Glassdoor scrapped Jobs"
@@ -29,16 +29,16 @@ def send_message():
             text = message
         )
         if response["ok"]:
-            print("File uploaded successfully.")
+            print("Message sent successfully")
         else:
             print("Failed to upload file.")
      except SlackApiError as e:
-         print(f"Error uploading file: {e.response['error']}")
+         print(f"Error sending message: {e.response['error']}")
 
 
 #Function to send the file
 def send_file():
-     for element in file_path:
+     for element in file_list:
          response =client.files_upload_v2(
             channel = channel,
             file= element,
@@ -48,4 +48,4 @@ def send_file():
     
      else:
         print(f"Error sending file ")
-    
+

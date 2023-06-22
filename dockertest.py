@@ -157,11 +157,11 @@ def scrape_jobs():
         driver.quit()
         df = pd.DataFrame.from_dict(details)
         df.to_csv("Glassdoor_jobs.csv",index=None)
-      #   df.to_excel("Glassdoor_jobs.xlsx", index= None)
+        df.to_excel("Glassdoor_jobs.xlsx", index= None)
 
 if __name__=="__main__":
         
-        
+        scrape_jobs()
         import file_sharing
         file_sharing.send_message()
         file_sharing.send_file()
